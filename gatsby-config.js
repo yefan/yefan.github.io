@@ -9,7 +9,7 @@ module.exports = {
     ogLanguage: `en_US`,
     author: 'Ye Fan',
     authorDescription: 'Be patient and keep practicing',
-    avatar: '/avatar.jpg',
+    avatar: '/profile.jpg',
     twitterSite: '', // website account on twitter
     twitterCreator: '', // creator account on twitter
     social: [
