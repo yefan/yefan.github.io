@@ -14,9 +14,14 @@ module.exports = {
     twitterCreator: '', // creator account on twitter
     social: [
       {
+        icon: `envelope`,
+        url: `mailto:yefan@vitalmechanics.com`,
+      },
+      {
         icon: `linkedin`,
         url: `https://www.linkedin.com/in/ye-fan-aa545057/`
       }
+      
     ]
   },
   plugins: [
