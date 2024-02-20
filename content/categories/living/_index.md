@@ -1,6 +1,6 @@
 ---
-title: Notes
-description: Some random notes
+title: Living
+description: Writings about my living
 image:
 
 # Badge style

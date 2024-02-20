@@ -5,7 +5,7 @@ slug: hello-world
 date: 2023-12-24 00:00:00+0000
 image: hello-world.jpg
 categories:
-    - Notes
+    - Programming
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 

@@ -5,7 +5,7 @@ slug: red-blue-pills
 date: 2024-02-11 00:00:00+0000
 image: red-blue-pills.png
 categories:
-    - Writing
+    - Being
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
