@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Programming on Ye Fan</title>
+        <link>https://yefan.github.io/categories/programming/</link>
+        <description>Recent content in Programming on Ye Fan</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yefan.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hello World</title>
+        <link>https://yefan.github.io/p/hello-world/</link>
+        <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/hello-world/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/hello-world/hello-world.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;Another attempt to start a blog for my jouney.&lt;/p&gt;
+&lt;p&gt;New year new start.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
