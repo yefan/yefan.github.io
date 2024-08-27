@@ -1,5 +1,5 @@
 ---
-title: Red pill or blue pill
+title: Red Pill or Blue Pill
 description: A reflection upon a pyschotherapy case
 slug: red-blue-pills
 date: 2024-02-11 00:00:00+0000
