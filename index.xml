@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Ye Fan</title>
+        <link>https://yefan.github.io/</link>
+        <description>Recent content on Ye Fan</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://yefan.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Behind the scenes of my first workshops</title>
+        <link>https://yefan.github.io/p/ai-agent/</link>
+        <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/ai-agent/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/ai-agent/teaser-3.png" alt="Featured image of post Behind the scenes of my first workshops" /&gt;&lt;p&gt;It all started one day, when my old friend &lt;a class=&#34;link&#34; href=&#34;https://www.thriveup.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Annie&lt;/a&gt; reached out to me asking if I would be interested in doing an AI workshop together. Sure, that sounded like a cool idea, well except a small problem, I didn&amp;rsquo;t know much about AI. But what could be a better way to learn than teaching it? Alright, let&amp;rsquo;s do it! (Annie is more versed in AI, so we are not completely clueless)&lt;/p&gt;
+&lt;p&gt;The good thing is that I didn&amp;rsquo;t start from scratch. My specialty in numerics and physics simulation provided much needed knowledge for picking up the math behind AI. I&amp;rsquo;ve also done plenty of software development in the past, so getting some code up and running is not very hard for me. It wasn&amp;rsquo;t exactly a smooth journey, but I think we were doing pretty well. As I was exploring various topics, I found multimodal embedding and ai agents very interesting, and tried to incorporate them into the &lt;a class=&#34;link&#34; href=&#34;https://github.com/yefan/image-agent-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;workshops&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On the multimodal embedding side, the CLIP paper from OpenAI more or less laid the groundwork. That paper is not hard to read, especially just the conceptual understanding that text embedding and image embedding can be in the same space. Built on top of that, zero-shot image classification is a straightforward application. It&amp;rsquo;s a small and neat idea, but led to an ah ha moment in my mind. An old problem now is solved in a few lines of python. Beautiful! I&amp;rsquo;m definitely going to introduce this topic in the workshop. Other applications of contrastive learning are immense too. Audio, video, 3D mesh, depth images, proteins, to name a few. Going from there, I further explored object detection using the same CLIP mechanism. It&amp;rsquo;s basically the owl model from google. This one is a bit complicated so I don&amp;rsquo;t think there&amp;rsquo;s enough time to do much in a workshop other than using it. But essentially, that model replaces the output layer by an object detection head, and adds bounding box embeddings to the model. The really cool part is that it can detect objects based on user query, and can return multiple objects with their bounding boxes. How cool is that?&lt;/p&gt;
+&lt;p&gt;Another interesting and also popular topic is agents. Particularly with tools, agents can interact with private data sources, and the physical world through function calls. This makes LLM go beyond chatting. One very good use case is code agent, for example, cursor. It makes code changes directly in the editor by conversing with the programmer. It&amp;rsquo;s a very good case because this type of agent has been widely adopted. During my exploration of the workshop material, I&amp;rsquo;ve come across many other agentic applications, but most of them are toy examples for illustrating a point. It&amp;rsquo;s surprisingly hard to find good material that&amp;rsquo;s neither too complicated or too basic. I want to develop some demo material not too far from real applications, yet, something I could cover in a couple of hours. Eventually I decided to do an image editing agent. It basically does a replacement in-paint job based on user input. If the user asks to replace the horse in the image with a cow, they might get an image like the one I have for this post. This agent touches on object detection mentioned above, OpenAI assistance framework, and text-to-image generation. It&amp;rsquo;s also very close to real applications. After the workshop, I discovered the OpenArt app. It&amp;rsquo;s packed with nice  image editing features powered by AI, and they have the exact feature called image replacement!&lt;/p&gt;
+&lt;p&gt;Overall, it was a great experience for me! I&amp;rsquo;ve learnt a lot and had so much fun. I feel connected with the local tech community, as well as the university students. I couldn&amp;rsquo;t thank more for the opportunity Annie provided.&lt;/p&gt;
+&lt;p&gt;So, what&amp;rsquo;s next? The AI community has been pushing hard forward. For example, llama 3.2 and OpenAI o1 had been released. On the product side, Google notebook, OpenAi search were out recently. We are still early in this AI era, there&amp;rsquo;s much to learn and play. I very much hope we would continue the workshops in the future, and explore other cool areas.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>The Coaching Way</title>
+        <link>https://yefan.github.io/p/the-coaching-way/</link>
+        <pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/the-coaching-way/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/the-coaching-way/growth-forest.png" alt="Featured image of post The Coaching Way" /&gt;&lt;p&gt;I finished UBC&amp;rsquo;s Career Coaching class a few months ago. It was overall a great experience and I feel like writing something about it. At the beginning, I was completely a newbie, no idea where to start. As the course moved along, I quickly learned the ropes. Towards the end, it started to feel like play. The idea of coaching, and the freestyle approach taken in the class came natural to me. The takeaway I want to write about is the coaching way. I think of it as a general attitude that applies outside of coaching sessions, to work and life as well. That could involve the interaction with other people, or simply the dialogue with oneself.&lt;/p&gt;
+&lt;p&gt;The coaching way starts with listening. I initially thought that was easy. Just sit and listen, how hard could that be. But really? Am I listening to formulate my rebuttal to convince others my opinions, or am I listening to understand their experiences? How many times I feel eager to say things like, I&amp;rsquo;ve been there, let me share my experience in the name of emphasizing with you. That may sound supportive on the surface, but it&amp;rsquo;s actually shifting the focus from the other person to myself. So the first thing I learned with the coaching way is that an active listener leads with curiosity, compassion and authenticity. The listener should maintain the focus on the speaker. It&amp;rsquo;s a way to genuinely understand, and to connect without an alternative motive. That still sounds pretty simple, but how exactly am I doing on that?&lt;/p&gt;
+&lt;p&gt;While I was getting started in coaching, I was a bit lost initially because the course didn&amp;rsquo;t teach us anything regarding how to structure a coaching session, probably on purpose. I remember asking the question &amp;ldquo;So, how do we get started? What are the opening lines that I can use?&amp;rdquo;. &amp;ldquo;Just say hello&amp;rdquo;, that was the answer I was given. Well, not very helpful, was it? Any case, without knowing better, I started my first session with my client. After a number of practices, I started to see the point. Each session can go very differently, and most of the time, it&amp;rsquo;s unpredictable. The most important part is to get myself to be there with the client. Having a presumed structure, or goal, or plan ahead of the session doesn&amp;rsquo;t seem necessary, and may even distract me from active listening. This could be counter-intuitive since there&amp;rsquo;s often an agenda for business type meetings, and participants often prepare ahead of time. Maybe a good analogy for coaching is jazzing. It doesn&amp;rsquo;t mean not taking things seriously, but rather it means improvising when performing. Similar analogies are sports games like soccer. Athletes couldn&amp;rsquo;t predict the games, but they still practice and work on their skills. For coaching, one of the most beautiful moments is when the coach and the client come up with something insightful spontaneously. I&amp;rsquo;m quite thankful that I learned the type of coaching I like to learn. We know things are governed by nature&amp;rsquo;s law, but nobody can predict the future since our physical world is chaotic. In some way we are all improvising life. Why not loosen up and adapt? I&amp;rsquo;m sure unexpected fun is more enjoyable then the planned ones.&lt;/p&gt;
+&lt;p&gt;Another thing that struck me is that coaches see clients as whole, capable and resourceful people. It&amp;rsquo;s just that sometimes clients may be having a hard time, and the coaches are there to accompany them along the journey while they overcome their obstacles. Coaches can not fix things directly. The vision and resolve must come from the within. In one of my meetings with the instructor, I asked him what shall I do to provide most value to the client, and he told me to just let the client do the work, coaches are there to provide stimulus. I like this perspective, and I think the other side of it is to encourage the clients to accept the responsibility of moving themselves from where they are now to where they want to be. In other parts of life or work, this could relate to mentorship, parenting and even self-leadership.&lt;/p&gt;
+&lt;p&gt;Last but not the least, the coaching way can be a way to live our inner life too. Simply replacing &lt;em&gt;client&lt;/em&gt; by &lt;em&gt;self&lt;/em&gt;, most of the teaching in coaching still makes a lot of sense.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Life Begins at 40</title>
+        <link>https://yefan.github.io/p/life-begins-at-40/</link>
+        <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/life-begins-at-40/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/life-begins-at-40/life-begins-at-40.jpg" alt="Featured image of post Life Begins at 40" /&gt;&lt;p&gt;OMG, what a shameless self-help click bait. That was how I felt when I first saw that slogan somewhere. But somehow that slogan got stuck with me, and I see valuable insights. Yes, I&amp;rsquo;m approaching 40, but not quite close yet. I don&amp;rsquo;t think this is a self-serving rationalization of my own aging, but more of a trigger to put my thoughts on being and living into writing.&lt;/p&gt;
+&lt;p&gt;As suggested in the sentence, 40 seems like a dividing age in life. What exactly is special about it? I think life before 40 more or less follows a structured pattern for most people. Going through school, getting started in career, staring a family and raising kids. One may need to plan the implementation details of such a grand design schema, but we are not often confronted by the schema of life itself. Over the years, we have school mates, work mates, and friends. We reinforce the idea of normal living by measuring against each other, and everything seems fine. But there&amp;rsquo;s a turning point when kids leave home to school, when career almost peaks, when body strength starts to deteriorate. And more importantly, the question of what&amp;rsquo;s next sounds louder and louder. After 40, there&amp;rsquo;s no more pattern to follow. We are finally facing ourselves alone, and realize that we are responsible for our life decisions.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s about the age that one confronts the believe that life is an eternal, upward spiral of achievement. When one stands at the peak of their strengths looking downwards, it&amp;rsquo;s a scary dark path to the abyss. The world is filled with uncertainty. Good moments are precious, and often have more to do with luck than will. That&amp;rsquo;s probably the feeling of a midlife crisis. On the positive side, it&amp;rsquo;s a golden opportunity for renewing one&amp;rsquo;s contract with life, and renegotiating the priorities with a finiteness perspective. It&amp;rsquo;s no longer about possibilities or potential. It&amp;rsquo;s about working with reality, and experiencing the realness here and now.&lt;/p&gt;
+&lt;p&gt;So there&amp;rsquo;re two lives for everyone. The first is given. It follows from our original family and social environment, which we don&amp;rsquo;t really get to pick, but to live it, to endure it. The second is a choice. A choice to resume responsibility, to conceive our own world, and to create a self within.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Red Pill or Blue Pill</title>
+        <link>https://yefan.github.io/p/red-blue-pills/</link>
+        <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/red-blue-pills/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/red-blue-pills/red-blue-pills.png" alt="Featured image of post Red Pill or Blue Pill" /&gt;&lt;p&gt;&amp;ldquo;You take the blue pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes.&amp;rdquo; This is a scene in the classic Matrix movie. Since the first time I watched it, I tell myself I will definitely choose the red pill. Yes, the truth, why would anybody not pick the same. I don&amp;rsquo;t want to live in a computer simulation.&lt;/p&gt;
+&lt;p&gt;Until recently, when I was reading Irvin Yalom&amp;rsquo;s story &amp;ldquo;Love&amp;rsquo;s Executioner&amp;rdquo;, for the first time, I&amp;rsquo;m not so sure anymore. A bit about the background here. Irvin Yalom is a renowned pychotherapist by his existential approach, i.e. dealing with the ultimate concerns such as death, loneliness, freedom, and meaninglessness. He&amp;rsquo;s also a great writer. Love&amp;rsquo;s Executioner is one of his books on some of his really interesting therapy cases.&lt;/p&gt;
+&lt;p&gt;In that particular story, the patient Thelma is an old lady in her seventies, having severe depression symptoms, and exhibiting obsessive behaviors. She said she had helplessly fallen in love with her old therapist Matthew ten years ago. But after a brief period of &amp;ldquo;love&amp;rdquo;, Matthew left her and cut her off. Since that moment, Thelma had been living in the void, and had progressively become more depressed. In her own words &amp;ldquo;I have lived for 27 days&amp;rdquo;. After that she was obsessed of getting Matthew&amp;rsquo;s attention in order to validate the realness of the 27 days, so as to further validate her life experience on earth. To meet her need, she said it could be as simple as a coffee meeting every month with Matthew. But Matthew&amp;rsquo;s complete non-response was literally killing her.&lt;/p&gt;
+&lt;p&gt;Well, Matthew obviously crossed the line, but leaving Thelma suffering alone towards suicide for that many years sounds cruel. Over the years, Thelma had seen numerous therapists, and Irvin was her last hope. Her sessions with Irvin was stagnating. In the end, Irvin&amp;rsquo;s last resort was to organize a three way session with Matthew. During that session, it was revealed to Irvin that Matthew at the time was working out his own psychosis. Earlier, he went to India for some intense spiritual training, but unfortunately collapsed mentally and was hospitalized. Right out of his hospitalization, he bumped into Thelma while still not in his clear mind. He tried to give Thelma anything she wanted, including love and sex, to become oneness. But that became too overwhelming, and more than what Matthew could afford, so he withdrew. It&amp;rsquo;s clear all of this experience is not a romantic love, and all had been explained to Thelma many times. Apparently Thelma couldn&amp;rsquo;t accept it. After the confrontation with reality during the three way session, her condition became worse, and she decided to stop the therapy sessions altogether. In her own words &amp;ldquo;Too much medicine kills the patient&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This is obviously not a successful clinical case. But a few weeks later, Thelma contacted Irvin again, and her condition became dramatically better because Matthew agreed to meet her once a month for coffee. &amp;ldquo;What?!&amp;rdquo;, I can image the look on Irvin&amp;rsquo;s face when he received that call. Ironically, this case was reported hugely successful by measure of patient&amp;rsquo;s symptoms, if not the most successful case in the academic study Irvin was conducting.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s one point from the story: what if facing reality is so painful that it rips all pleasure and meaning from one&amp;rsquo;s life, and sends one into obliteration. While illusion may it be, provides hope and joy to one&amp;rsquo;s life, especially for those in their final days. Is reality still that important? To be clear, Thelma was on a self destruction path if Irvin didn&amp;rsquo;t pull her back, and I didn&amp;rsquo;t mean being a psychic is anything worth celebrating. It&amp;rsquo;s the result of the therapy that&amp;rsquo;s thought provoking. Thelma did become much better symptom wise, but psychologically sicker at the same time.&lt;/p&gt;
+&lt;p&gt;When I was pondering the choice between red pill and blue pill, I was a teenager, and I&amp;rsquo;m still young. Facing reality may be painful temporarily, but that may give me an opportunity for real experience for the rest of my life. But if I were Thelma in the case above, I&amp;rsquo;m not sure if I could summon the courage to swallow the red pill, especially when the blue pill is so readily available. I know that sounds coward and shameful, but we are not all heros. Most of us are normal humans beings. Our living on the earth is a collection of experiences. What&amp;rsquo;s wrong with accepting our cowardliness as basic self defense against existential crisis, especially in severe adverse circumstances?&lt;/p&gt;
+&lt;p&gt;If both red and blue pills are available to pick, I think picking the red pill is more aligned with our general value system, and I think choosing reality also pays huge respect to the very being of a human. But what about the blue pill for illusion? During the last moments of life, if that gives us more comfort and assurance, and help us defend ourselves against the terror of death, would that still be a poor choice? And how exactly is Thelma&amp;rsquo;s believe of her false love experience different from the more commonly accepted afterlife promises? I don&amp;rsquo;t have the answers, not sure if I ever will. I&amp;rsquo;m really curious if Irvin ever had more reflections on this case.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hello World</title>
+        <link>https://yefan.github.io/p/hello-world/</link>
+        <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/hello-world/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/hello-world/hello-world.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;Another attempt to start a blog for my jouney.&lt;/p&gt;
+&lt;p&gt;New year new start.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://yefan.github.io/archives/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://yefan.github.io/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/links/</guid>
+        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
+&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://yefan.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

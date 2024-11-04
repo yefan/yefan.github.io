@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Programming on Ye Fan</title>
+        <link>https://yefan.github.io/categories/programming/</link>
+        <description>Recent content in Programming on Ye Fan</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://yefan.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Behind the scenes of my first workshops</title>
+        <link>https://yefan.github.io/p/ai-agent/</link>
+        <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/ai-agent/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/ai-agent/teaser-3.png" alt="Featured image of post Behind the scenes of my first workshops" /&gt;&lt;p&gt;It all started one day, when my old friend &lt;a class=&#34;link&#34; href=&#34;https://www.thriveup.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Annie&lt;/a&gt; reached out to me asking if I would be interested in doing an AI workshop together. Sure, that sounded like a cool idea, well except a small problem, I didn&amp;rsquo;t know much about AI. But what could be a better way to learn than teaching it? Alright, let&amp;rsquo;s do it! (Annie is more versed in AI, so we are not completely clueless)&lt;/p&gt;
+&lt;p&gt;The good thing is that I didn&amp;rsquo;t start from scratch. My specialty in numerics and physics simulation provided much needed knowledge for picking up the math behind AI. I&amp;rsquo;ve also done plenty of software development in the past, so getting some code up and running is not very hard for me. It wasn&amp;rsquo;t exactly a smooth journey, but I think we were doing pretty well. As I was exploring various topics, I found multimodal embedding and ai agents very interesting, and tried to incorporate them into the &lt;a class=&#34;link&#34; href=&#34;https://github.com/yefan/image-agent-workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;workshops&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On the multimodal embedding side, the CLIP paper from OpenAI more or less laid the groundwork. That paper is not hard to read, especially just the conceptual understanding that text embedding and image embedding can be in the same space. Built on top of that, zero-shot image classification is a straightforward application. It&amp;rsquo;s a small and neat idea, but led to an ah ha moment in my mind. An old problem now is solved in a few lines of python. Beautiful! I&amp;rsquo;m definitely going to introduce this topic in the workshop. Other applications of contrastive learning are immense too. Audio, video, 3D mesh, depth images, proteins, to name a few. Going from there, I further explored object detection using the same CLIP mechanism. It&amp;rsquo;s basically the owl model from google. This one is a bit complicated so I don&amp;rsquo;t think there&amp;rsquo;s enough time to do much in a workshop other than using it. But essentially, that model replaces the output layer by an object detection head, and adds bounding box embeddings to the model. The really cool part is that it can detect objects based on user query, and can return multiple objects with their bounding boxes. How cool is that?&lt;/p&gt;
+&lt;p&gt;Another interesting and also popular topic is agents. Particularly with tools, agents can interact with private data sources, and the physical world through function calls. This makes LLM go beyond chatting. One very good use case is code agent, for example, cursor. It makes code changes directly in the editor by conversing with the programmer. It&amp;rsquo;s a very good case because this type of agent has been widely adopted. During my exploration of the workshop material, I&amp;rsquo;ve come across many other agentic applications, but most of them are toy examples for illustrating a point. It&amp;rsquo;s surprisingly hard to find good material that&amp;rsquo;s neither too complicated or too basic. I want to develop some demo material not too far from real applications, yet, something I could cover in a couple of hours. Eventually I decided to do an image editing agent. It basically does a replacement in-paint job based on user input. If the user asks to replace the horse in the image with a cow, they might get an image like the one I have for this post. This agent touches on object detection mentioned above, OpenAI assistance framework, and text-to-image generation. It&amp;rsquo;s also very close to real applications. After the workshop, I discovered the OpenArt app. It&amp;rsquo;s packed with nice  image editing features powered by AI, and they have the exact feature called image replacement!&lt;/p&gt;
+&lt;p&gt;Overall, it was a great experience for me! I&amp;rsquo;ve learnt a lot and had so much fun. I feel connected with the local tech community, as well as the university students. I couldn&amp;rsquo;t thank more for the opportunity Annie provided.&lt;/p&gt;
+&lt;p&gt;So, what&amp;rsquo;s next? The AI community has been pushing hard forward. For example, llama 3.2 and OpenAI o1 had been released. On the product side, Google notebook, OpenAi search were out recently. We are still early in this AI era, there&amp;rsquo;s much to learn and play. I very much hope we would continue the workshops in the future, and explore other cool areas.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hello World</title>
+        <link>https://yefan.github.io/p/hello-world/</link>
+        <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://yefan.github.io/p/hello-world/</guid>
+        <description>&lt;img src="https://yefan.github.io/p/hello-world/hello-world.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;Another attempt to start a blog for my jouney.&lt;/p&gt;
+&lt;p&gt;New year new start.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
