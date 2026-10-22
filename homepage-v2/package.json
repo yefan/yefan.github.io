@@ -1,0 +1,13 @@
+{
+  "name": "ye-fan-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ye Fan's professional portfolio. A small, dependency-free static site.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}
