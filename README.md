@@ -1,57 +1,51 @@
-<img align="right" width="150" alt="logo" src="https://user-images.githubusercontent.com/5889006/190859553-5b229b4f-c476-4cbd-928f-890f5265ca4c.png">
+# Ye Fan · Professional homepage
 
-# Hugo Theme Stack Starter Template
+Source for [yefan.github.io](https://yefan.github.io/). A static homepage with a profile, products, and publications. Dark mode is the default, with an optional light theme.
 
-This is a quick start template for [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.
+## Local development
 
-It comes with a basic theme structure and configuration. GitHub action has been set up to deploy the theme to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
+Use Node.js 24 (see `.nvmrc`). There are no package dependencies to install.
 
-## Get started
-
-1. Click *Use this template*, and create your repository on GitHub.
-![Step 1](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
-
-2. Once the repository is created, create a GitHub codespace asociated with it.
-![Create codespace](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)
-
-3. And voila! You're ready to go. The codespace has been configured with the latest version of Hugo extended, just run `hugo server` in the terminal and see your new site in action.
-
-4. Check `config` folder for the configuration files. You can edit them to suit your needs. Make sure to update the `baseurl` property in `config/_default/config.toml` to your site's URL.
-
-5. Once you're done editing the site, just commit it and push it. GitHub action will deploy the site automatically to GitHub page asociated with the repository.
-![GitHub action](https://user-images.githubusercontent.com/5889006/156916881-90b8bb9b-1925-4e60-9d7a-8026cda729bf.png)
-
----
-
-In case you don't want to use GitHub codespace, you can also run this template in your local machine. **You need to install Git, Go and Hugo extended locally.**
-
-## Update theme manually
-
-Run:
-
-```bash
-hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
-hugo mod tidy
+```sh
+npm run dev
 ```
 
-> This starter template has been configured with `v3` version of theme. Due to the limitation of Go module, once the `v4` or up version of theme is released, you need to update the theme manually. (Modifying `config/module.toml` file)
+Open http://127.0.0.1:4173. Changes to `content.mjs`, `src/`, and `public/` rebuild automatically; refresh the browser to see them. Restart the server after editing the build scripts. Set `PORT` to use another port.
 
-## Deploy to another static page hostings
-
-If you want to build this site using another static page hosting, you need to make sure they have Go installed in the machine. 
-
-<details>
-  <summary>Vercel</summary>
-  
-You need to overwrite build command to install manually Go:
-
-```
-amazon-linux-extras install golang1.11 && hugo --gc --minify
+```sh
+npm run check  # Build and validate the output
+npm run build  # Build dist/ only
 ```
 
-![](https://user-images.githubusercontent.com/5889006/156917172-01e4d418-3469-4ffb-97e4-a905d28b8424.png)
+## Content and layout
 
-Make sure also to specify Hugo version in the environment variable `HUGO_VERSION` (Use the latest version of Hugo extended):
+- `content.mjs`: profile, products, and publications.
+- `src/index.html`: page template.
+- `src/styles.css`: responsive layout and dark/light themes.
+- `src/app.js`: theme preference.
+- `public/`: portrait, favicon, and other files copied to the output.
 
-![Environment variable](https://user-images.githubusercontent.com/5889006/156917212-afb7c70d-ab85-480f-8288-b15781a462c0.png)
-</details>
+Products are stored in `work`, with `id`, `name`, and `description`. Optional `href` and `linkLabel` fields add a link below a product.
+
+Publications are stored in `research`, newest first. Each entry has a `title`, an `authors` array in publication order, `venue`, `year`, and `href`.
+
+The content and links work without JavaScript. The site uses no external fonts, analytics, or runtime libraries. `dist/` is generated and excluded from Git.
+
+## Publishing
+
+GitHub Pages uses **GitHub Actions** as its publishing source. The workflow in `.github/workflows/deploy.yml`:
+
+1. Runs `npm run check` on pushes and pull requests to `master`.
+2. Uploads only `dist/` for builds on `master`.
+3. Deploys that artifact to https://yefan.github.io/ through the `github-pages` environment.
+
+Push changes to `master` to publish. The workflow can also be run manually from the Actions tab on `master`. Pull requests are checked without deploying. The workflow uses GitHub's built-in token; no separate deployment secret is needed.
+
+The old Hugo source is preserved at commit `a1e9dd6` in Git history. Its theme-update workflow has been removed. The existing `gh-pages` branch is retained as a historical build and is no longer the publishing source.
+
+## Sources
+
+- Profile: the supplied résumé and LinkedIn export, with the user's confirmed title, VP Technology.
+- Design reference and portrait: `ye-blog`; no blog posts are included.
+- VitalSkin: [UBC's report on Fantastic Beasts and Where to Find Them](https://sensorimotor.cs.ubc.ca/2016/12/20/our-skin-simulation-research-featured-in-fantastic-beasts-and-where-to-find-them/).
+- Publication metadata: the linked author project pages, UBC paper archive, and ACM records.

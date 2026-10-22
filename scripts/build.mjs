@@ -35,7 +35,7 @@ export async function build() {
   });
   await writeFile(path.join(dist, 'index.html'), html);
   await writeFile(path.join(dist, '.nojekyll'), '');
-  console.log(`Built homepage-v2/dist (${c.work.length} projects, ${c.research.length} publications)`);
+  console.log(`Built dist (${c.work.length} products, ${c.research.length} publications)`);
   return dist;
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) await build();
