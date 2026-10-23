@@ -29,7 +29,9 @@ Products are stored in `work`, with `id`, `name`, and `description`. Optional `h
 
 Publications are stored in `research`, newest first. Each entry has a `title`, an `authors` array in publication order, `venue`, `year`, and `href`.
 
-The content and links work without JavaScript. The site uses no external fonts, analytics, or runtime libraries. `dist/` is generated and excluded from Git.
+The content and links work without JavaScript. The site uses no external fonts or application libraries. `dist/` is generated and excluded from Git.
+
+Cloudflare Web Analytics collects visitor statistics through the snippet at the end of `src/index.html`. View the reports for `yefan.github.io` in the Cloudflare Web Analytics dashboard.
 
 ## Publishing
 
