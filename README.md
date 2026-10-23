@@ -33,6 +33,19 @@ The content and links work without JavaScript. The site uses no external fonts o
 
 Cloudflare Web Analytics collects visitor statistics through the snippet at the end of `src/index.html`. View the reports for `yefan.github.io` in the Cloudflare Web Analytics dashboard.
 
+## Search indexing
+
+The build uses `siteUrl` in `content.mjs` for the canonical URL, sitemap, profile structured data, and social preview URLs. All visible content is in the generated HTML, so crawlers do not need to run JavaScript.
+
+- `robots.txt` allows crawling and points to `sitemap.xml`.
+- `sitemap.xml` lists the canonical homepage. Section fragments such as `#products` belong to that page and are not separate entries. No automatic modification date is published, avoiding misleading freshness dates on rebuilds.
+- JSON-LD describes the website and profile, including the person's current role and linked professional profiles.
+- Open Graph and Twitter card metadata use the existing portrait for link previews.
+
+To monitor Google indexing, add `https://yefan.github.io/` as a **URL-prefix property** in [Google Search Console](https://search.google.com/search-console/). Use HTML file or meta-tag ownership verification, submit `https://yefan.github.io/sitemap.xml`, and inspect the homepage URL to request indexing. A verification HTML file belongs in `public/`; a verification meta tag belongs in `src/index.html`. [Bing Webmaster Tools](https://www.bing.com/webmasters/) can use the same sitemap.
+
+These files help crawlers discover and understand the site; they do not guarantee indexing or search rankings. Reference: [Google's SEO guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide).
+
 ## Publishing
 
 GitHub Pages uses **GitHub Actions** as its publishing source. The workflow in `.github/workflows/deploy.yml`:

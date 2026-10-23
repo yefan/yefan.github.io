@@ -9,13 +9,46 @@ const arrowNE = icon('<path d="M6 18 18 6M6 6h12v12"/>');
 
 export async function build() {
   const { default: c } = await import(`${new URL('../content.mjs', import.meta.url).href}?v=${Date.now()}`);
+  const siteUrl = new URL(c.siteUrl);
+  if (siteUrl.protocol !== 'https:' || siteUrl.pathname !== '/' || siteUrl.search || siteUrl.hash) {
+    throw new Error('siteUrl must be the HTTPS homepage URL without a query or fragment.');
+  }
+  const pageTitle = `${c.name} — Simulation, Digital Humans & Robotics`;
+  const imageUrl = new URL('assets/ye-fan.png', siteUrl).href;
+  const personId = new URL('#person', siteUrl).href;
+  const websiteId = new URL('#website', siteUrl).href;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite', '@id': websiteId,
+        url: siteUrl.href, name: c.name, inLanguage: 'en',
+        publisher: { '@id': personId }
+      },
+      {
+        '@type': 'ProfilePage', '@id': new URL('#profile', siteUrl).href,
+        url: siteUrl.href, name: pageTitle, description: c.description,
+        inLanguage: 'en', isPartOf: { '@id': websiteId },
+        mainEntity: { '@id': personId }
+      },
+      {
+        '@type': 'Person', '@id': personId,
+        name: c.name, url: siteUrl.href, image: imageUrl,
+        description: c.intro, jobTitle: c.title,
+        worksFor: { '@type': 'Organization', name: c.company, url: c.companyUrl },
+        homeLocation: { '@type': 'Place', name: c.location },
+        sameAs: [c.linkedin, c.github]
+      }
+    ]
+  };
   const dist = path.join(root, 'dist');
   await rm(dist, { recursive: true, force: true });
   await mkdir(dist, { recursive: true });
   await cp(path.join(root, 'public'), dist, { recursive: true });
   await Promise.all(['styles.css', 'app.js'].map(name => cp(path.join(root, 'src', name), path.join(dist, name))));
   const slots = {
-    PAGE_TITLE: `${esc(c.name)} — Simulation, Digital Humans & Robotics`,
+    PAGE_TITLE: esc(pageTitle), SITE_URL: esc(siteUrl.href), IMAGE_URL: esc(imageUrl),
+    STRUCTURED_DATA: JSON.stringify(structuredData).replace(/</g, '\\u003c'),
     DESCRIPTION: esc(c.description), NAME: esc(c.name), ROLE: esc(c.title), COMPANY: esc(c.company), COMPANY_URL: esc(c.companyUrl),
     LOCATION: esc(c.location), EMAIL: esc(c.email), LINKEDIN: esc(c.linkedin), GITHUB: esc(c.github), YEAR: new Date().getFullYear(),
     INTRO: esc(c.intro), ARROW_NE: arrowNE,
@@ -34,6 +67,9 @@ export async function build() {
     return slots[key];
   });
   await writeFile(path.join(dist, 'index.html'), html);
+  await writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${new URL('sitemap.xml', siteUrl).href}\n`);
+  // This is one page; fragment links are sections, not separate sitemap URLs.
+  await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${esc(siteUrl.href)}</loc></url>\n</urlset>\n`);
   await writeFile(path.join(dist, '.nojekyll'), '');
   console.log(`Built dist (${c.work.length} products, ${c.research.length} publications)`);
   return dist;

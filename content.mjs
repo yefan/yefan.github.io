@@ -1,5 +1,6 @@
 // Edit this file to update the homepage. Add entries to `work` as projects are ready.
 export default {
+  siteUrl: "https://yefan.github.io/",
   name: "Ye Fan",
   title: "VP Technology",
   company: "Vital Mechanics Research",

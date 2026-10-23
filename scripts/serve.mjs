@@ -7,7 +7,7 @@ import { build, root } from './build.mjs';
 
 const dist=await build();
 const port=Number(process.env.PORT || 4173);
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.pdf':'application/pdf'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.pdf':'application/pdf','.txt':'text/plain; charset=utf-8','.xml':'application/xml; charset=utf-8'};
 let rebuild=Promise.resolve();
 let timer;
 const sourceSignature=async()=>{
