@@ -10,7 +10,11 @@ export default {
   linkedin: "https://www.linkedin.com/in/ye-fan-aa545057/",
   github: "https://github.com/yefan",
   description: "Ye Fan works on simulation at Vital Mechanics Research, including humans and robots. Products and selected publications.",
-  intro: "I work on simulation at Vital Mechanics Research, including humans and robots",
+  intro: `I work on simulation at Vital Mechanics Research, including humans and robots.
+
+I believe in creating high-fidelity simulations first, then making them fast enough to be practically useful. For over a decade, I've been pushing the boundaries of simulation in a few industries.
+
+I enjoy connecting with researchers, engineers, founders, and industry teams. I’m always open to meeting new people—especially over a good cup of coffee.`,
   work: [
     {
       id: "vitalfit",

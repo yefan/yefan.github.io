@@ -31,6 +31,7 @@ h1 { font-size:32px; font-weight:600; letter-spacing:-1px; line-height:1.2; marg
 .location { display:flex; align-items:center; gap:5px; color:var(--muted); font-size:13px; margin-top:3px; }
 .location svg { width:14px; height:14px; }
 .profile-intro { margin-top:24px; color:var(--muted); font-size:15px; line-height:1.85; max-width:805px; }
+.profile-intro p + p { margin-top:14px; }
 .profile-intro a { color:var(--accent); }
 .profile-intro a:hover { text-decoration:underline; text-underline-offset:3px; }
 .profile-links { display:flex; flex-wrap:wrap; gap:26px; margin-top:23px; }

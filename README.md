@@ -27,6 +27,8 @@ npm run build  # Build dist/ only
 
 Products are stored in `work`, with `id`, `name`, and `description`. Optional `href` and `linkLabel` fields add a link below a product.
 
+Edit the `intro` text in `content.mjs` to update the self introduction. Blank lines separate paragraphs. The company name is automatically linked to `companyUrl`.
+
 Publications are stored in `research`, newest first. Each entry has a `title`, an `authors` array in publication order, `venue`, `year`, and `href`.
 
 The content and links work without JavaScript. The site uses no external fonts or application libraries. `dist/` is generated and excluded from Git.
