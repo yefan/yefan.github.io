@@ -49,9 +49,9 @@ export async function build() {
   const slots = {
     PAGE_TITLE: esc(pageTitle), SITE_URL: esc(siteUrl.href), IMAGE_URL: esc(imageUrl),
     STRUCTURED_DATA: JSON.stringify(structuredData).replace(/</g, '\\u003c'),
-    DESCRIPTION: esc(c.description), NAME: esc(c.name), ROLE: esc(c.title), COMPANY: esc(c.company), COMPANY_URL: esc(c.companyUrl),
+    DESCRIPTION: esc(c.description), NAME: esc(c.name),
     LOCATION: esc(c.location), EMAIL: esc(c.email), LINKEDIN: esc(c.linkedin), GITHUB: esc(c.github), YEAR: new Date().getFullYear(),
-    INTRO: esc(c.intro), ARROW_NE: arrowNE,
+    INTRO: esc(c.intro).replace(esc(c.company), `<a href="${esc(c.companyUrl)}" target="_blank" rel="noopener noreferrer">${esc(c.company)}<span class="sr-only"> (opens in a new tab)</span></a>`), ARROW_NE: arrowNE,
     SUN: icon('<circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>', 'sun-icon'),
     MOON: icon('<path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/>', 'moon-icon'),
     PIN: icon('<path d="M18 10c0 5-6 10-6 10S6 15 6 10a6 6 0 1 1 12 0Z"/><circle cx="12" cy="10" r="2"/>'),

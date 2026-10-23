@@ -9,8 +9,8 @@ export default {
   email: "yefancs@gmail.com",
   linkedin: "https://www.linkedin.com/in/ye-fan-aa545057/",
   github: "https://github.com/yefan",
-  description: "Ye Fan works at the intersection of physics-based simulation, digital humans, and robotics. VP Technology at Vital Mechanics Research, based in Vancouver.",
-  intro: "I work on physics-based simulation, digital humans, and robotics. My background is in numerical methods, GPU simulation, and software engineering.",
+  description: "Ye Fan works on simulation at Vital Mechanics Research, including humans and robots. Products and selected publications.",
+  intro: "I work on simulation at Vital Mechanics Research, including humans and robots",
   work: [
     {
       id: "vitalfit",
